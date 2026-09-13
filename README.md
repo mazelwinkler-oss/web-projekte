@@ -58,7 +58,8 @@ technische Vorliebe, sondern das Resultat dieser Abwägung.
 - Domain von Squarespace-DNS zu Cloudflare umgezogen, ohne Ausfallzeit
 - `LocalBusiness`-Markup mit Adresse, Koordinaten, Öffnungszeiten, Bewertungen,
   Leistungen und Buchungs-Aktion
-- Weiterleitungen für alle alten Adressen, die noch im Google-Index standen
+- Canonical-Tag gesetzt, damit die Seite unter einer eindeutigen Adresse zählt
+- Eigene Fehlerseite statt Standard-Meldung des Hosters
 
 ### Ergebnis, gemessen
 
@@ -70,7 +71,8 @@ technische Vorliebe, sondern das Resultat dieser Abwägung.
 | Laufende Kosten | 16–25 € / Monat Abo | **0 € / Monat Hosting**, nur Domain (~15 €/Jahr) |
 | Strukturierte Daten | keine | `LocalBusiness` vollständig |
 | Ausfallzeit beim Umzug | — | **keine** |
-| Tote Links aus dem Google-Index | mehrere | **0**, alle weitergeleitet |
+| Eindeutige Adresse für Google | nicht gesetzt | **Canonical-Tag gesetzt** |
+| Fehlerseite | Standard | eigene, im Seitendesign |
 
 Zur Einordnung: Google stuft alles unter 0,8 s als gut ein.
 
@@ -209,7 +211,8 @@ funktioniert unabhängig vom Thema.
 
 - Website von Grund auf gebaut und live geschaltet, mit automatischem Deployment
 - Domain umgezogen, ohne dass die Seite offline ging
-- `LocalBusiness`-Markup und Weiterleitungen für Adressen aus dem Suchindex gesetzt
+- `LocalBusiness`-Markup gesetzt: Adresse, Koordinaten, Öffnungszeiten,
+  Bewertungen, Leistungen und Buchungsaktion maschinenlesbar hinterlegt
 - Schriften lokal eingebunden, sodass beim Seitenaufruf keine externen Server
   kontaktiert werden
 - Ladezeit und Übertragungsmenge gemessen und gesenkt
