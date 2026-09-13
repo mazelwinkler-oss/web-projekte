@@ -147,11 +147,50 @@ nebenbei entstanden ist, ist die, die ich hauptberuflich machen möchte.
 
 ---
 
-## Mitgewirkt
+## Wie ich arbeite
 
-**alissa-stein.com** — Website einer Moderatorin, live.
-Kein alleiniges Projekt von mir. Ich habe an der Umsetzung mitgewirkt, den
-Hauptteil haben andere gemacht.
+Beide Projekte oben sind nicht dadurch entstanden, dass ich einer KI gesagt habe,
+was ich will, und das Ergebnis übernommen habe. Dahinter steht ein Ablauf, den
+ich mir über zwei Jahre aufgebaut habe.
+
+### 1. Wissen sammeln, bevor gebaut wird
+
+Bei jedem neuen Thema recherchiere ich zuerst — Fachvideos, Dokumentation,
+Praxisberichte. Was dabei brauchbar ist, landet nicht in einem Lesezeichen,
+sondern in einer eigenen Wissensablage auf meinem Rechner: rund 20 Themenbereiche
+als durchsuchbare Textdateien, aufgebaut mit Obsidian.
+
+Der entscheidende Teil: **Claude Code hat direkten Zugriff auf diese Ablage.**
+Damit arbeite ich nicht mit einer KI, die bei null anfängt, sondern mit einer, die
+meine Notizen, Projektstände und festgelegten Regeln kennt.
+
+### 2. Bauen und dabei hinterfragen
+
+Während der Umsetzung frage ich gezielt nach: Ist das so gelöst, wie es üblich
+ist? Was passiert hier technisch? Was liegt danach tatsächlich auf dem Server?
+
+Diese Fragen kosten Zeit und finden Fehler, die im fertigen Ergebnis nicht zu
+sehen sind. Der `node_modules`-Fall weiter oben ist genau so aufgefallen.
+
+### 3. Aus dem Ergebnis eine wiederverwendbare Anleitung machen
+
+Wenn etwas funktioniert, schreibe ich den Weg als **Skill** fest — eine
+strukturierte Anleitung, die Claude Code beim nächsten Mal selbst befolgt.
+Aus dem Komfortzone-Projekt ist so ein Ablaufplan für statische Websites
+entstanden: Aufbau, Deployment, Domain-Umzug, strukturierte Daten, Prüfschritte.
+
+Der Effekt: Das zweite Projekt dieser Art beginnt nicht wieder bei null. Und wenn
+sich etwas ändert, wird der Skill überarbeitet statt die Arbeit wiederholt.
+
+### 4. Werkzeuge bauen, wo Handarbeit anfällt
+
+Was sich nicht als Anleitung lösen lässt, wird ein kleines Programm — siehe
+unten.
+
+**Warum das hier steht:** Die Frage bei KI-gestützter Arbeit ist nicht, ob jemand
+ein bestimmtes Werkzeug schon kennt. Sie ist, wie schnell und wie gründlich sich
+jemand ein neues erschließt. Dieser Ablauf ist meine Antwort darauf, und er
+funktioniert unabhängig vom Thema.
 
 ---
 
@@ -159,11 +198,12 @@ Hauptteil haben andere gemacht.
 
 | Bereich | Werkzeuge |
 |---|---|
-| KI-gestützte Entwicklung | Claude Code (Terminal), Claude, ChatGPT |
+| KI-gestützte Entwicklung | Claude Code (Terminal), eigene Skills, Claude, ChatGPT |
 | Website | HTML, CSS, Git, GitHub |
 | Hosting und Domains | Cloudflare Pages, DNS, Weiterleitungen |
 | Auffindbarkeit | `LocalBusiness`-Markup, Seitenstruktur, Canonical |
 | Server | Linux, Incus-Container, Nextcloud, WordPress-Migration |
+| Wissensablage | Obsidian, mit direktem Zugriff durch Claude Code |
 
 ## Was ich gemacht habe
 
