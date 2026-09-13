@@ -89,14 +89,15 @@ StoryBrand als Grundlage.
 
 Die Reihenfolge der Abschnitte ist deshalb keine Geschmacksfrage:
 
-| Abschnitt | Aufgabe |
+| Element der Methode | Umsetzung auf der Seite |
 |---|---|
-| Einstieg | in zehn Sekunden klarmachen: Was gibt es hier, für wen, was tun |
-| Problem | die Lage des Besuchers beschreiben, bis er sich wiedererkennt |
-| Die Beraterinnen | wer hier hilft und warum man ihnen vertrauen kann |
-| Der Ablauf | was konkret passiert, wenn man einen Termin bucht |
-| Sortiment und Fragen | die letzten Einwände ausräumen |
-| Kontakt | ein klarer nächster Schritt, kein Formularlabyrinth |
+| **Einstieg** — in zehn Sekunden klarmachen, worum es geht | „Eine Babytrage kauft man nicht. Man passt sie an." |
+| **Problem** — die Lage beschreiben, bis der Besucher sich wiedererkennt | Erst das Äußere (Baby quengelt, Rücken zwickt), dann das Innere (das Gefühl, etwas falsch zu machen) |
+| **Mentor** — wer hilft und warum man ihm vertrauen kann | Überschrift „Wer dich begleitet", nicht „Über uns". Der Kunde bleibt im Mittelpunkt |
+| **Plan** — Komplexität in drei Schritte auflösen | „In drei Schritten zur richtigen Trage": Termin buchen, Beratung vor Ort, passende Trage |
+| **Was sich ändert** — Gewinn und Verlust zeigen | „Eine Stunde Beratung. Oder Monate Unsicherheit." Beide Seiten, nicht nur die schöne |
+| **Vertrauen und Einwände** | Echte Kundenstimmen und Bewertung, danach die häufigen Fragen vor der Buchung |
+| **Abschluss** | Greift den Einstiegssatz wieder auf und führt zum nächsten Schritt |
 
 Der Leitsatz dieser Methode: **Design verkauft nicht, Klarheit verkauft.** Wer
 erst scrollen und suchen muss, springt ab — deshalb keine Bildergalerien im
