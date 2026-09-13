@@ -18,12 +18,34 @@ Kundeneigentum sind.
 
 ### Ausgangslage
 
-Squarespace-Seite mit laufendem Abo. Sie funktionierte, war aber langsam, hatte
-kein strukturiertes Markup für die lokale Suche, und die Rechtstexte beschrieben
-teilweise Dinge, die es auf der Seite gar nicht gab.
+Es gab noch keine gestaltete Website. Auf Squarespace lag eine Notlösung: die
+nötigsten Informationen, damit Kundinnen überhaupt Termine buchen konnten. Kein
+Aufbau, kein Konzept, keine strukturierten Daten für die lokale Suche. Die
+Rechtstexte beschrieben teilweise Dinge, die es auf der Seite gar nicht gab.
 
 Erschwerend: Der Laden wurde von einem Vorgängerbetrieb übernommen. Die
 Sichtbarkeit bei Google hing noch an dessen Domain.
+
+**Meine Aufgabe:** eine richtige Website gestalten und live bringen.
+
+### Die Entscheidung, die das Projekt geprägt hat
+
+Nachdem der Entwurf stand, kam die eigentliche Frage: Wie kommt dieses Design auf
+Squarespace?
+
+Antwort: gar nicht direkt. Squarespace nimmt kein fertiges HTML und CSS entgegen.
+Ich hätte das Layout im Baukasten nachbauen müssen — mit dem Ergebnis, dass es
+nicht so aussieht wie entworfen, und mit dem Abo als laufender Kostenposten.
+
+Ich habe die Alternativen recherchiert und intern mit den Inhaberinnen
+durchgesprochen. Ausschlaggebend waren drei Punkte:
+
+1. Das Design sollte genau so umgesetzt werden, wie es entworfen wurde
+2. Ein Online-Shop soll später dazukommen — die Lösung musste dafür offen sein
+3. Die laufenden Kosten sollten runter
+
+Ergebnis: statische Seite auf Cloudflare Pages statt Baukasten. Das war keine
+technische Vorliebe, sondern das Resultat dieser Abwägung.
 
 ### Umsetzung
 
@@ -40,8 +62,9 @@ Sichtbarkeit bei Google hing noch an dessen Domain.
 
 ### Ergebnis, gemessen
 
-| | Vorher (Squarespace) | Nachher |
+| | Vorher (Squarespace-Notlösung) | Nachher |
 |---|---|---|
+| Website | Informationsseite ohne Gestaltung | gestaltete Seite mit Story-Aufbau |
 | Ladezeit | nicht gemessen | **0,20 s** |
 | Übertragene Datenmenge | — | 15,8 KB (von 61,5 KB, komprimiert) |
 | Laufende Kosten | 16–25 € / Monat Abo | **0 € / Monat Hosting**, nur Domain (~15 €/Jahr) |
@@ -50,6 +73,10 @@ Sichtbarkeit bei Google hing noch an dessen Domain.
 | Tote Links aus dem Google-Index | mehrere | **0**, alle weitergeleitet |
 
 Zur Einordnung: Google stuft alles unter 0,8 s als gut ein.
+
+**Aktueller Stand:** Die Seite ist live und in Benutzung. Drei Bildplätze warten
+noch auf Fotos, die erst gemacht werden müssen. Der Online-Shop ist in
+Vorbereitung.
 
 ### Was schiefging — und wie ich es gefunden habe
 
