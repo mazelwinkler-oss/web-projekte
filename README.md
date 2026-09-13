@@ -308,7 +308,3 @@ E-Commerce tätig.
 
 Den Umgang mit KI-gestützter Entwicklung habe ich mir selbst angeeignet — über
 Fachvideos, Dokumentation und gebaute Projekte, die ich mitschreibe.
-
-**Weitere Repos:**
-[`lms-to-wordpress-migration`](https://github.com/mazelwinkler-oss/lms-to-wordpress-migration) ·
-[`wg-migration-tool`](https://github.com/mazelwinkler-oss/wg-migration-tool)
