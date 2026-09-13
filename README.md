@@ -53,7 +53,7 @@ Hier stehen Vorgehen, gemessene Ergebnisse und was schiefgegangen ist.
 ### Ausgangslage
 
 Es gab noch keine gestaltete Website. Auf Squarespace lag eine Notlösung: die
-nötigsten Informationen, damit Kundinnen überhaupt Termine buchen konnten. Kein
+nötigsten Informationen, damit Kunden überhaupt Termine buchen konnten. Kein
 Aufbau, kein Konzept, keine strukturierten Daten für die lokale Suche.
 
 Erschwerend: Der Laden wurde von einem Vorgängerbetrieb übernommen. Die
@@ -92,7 +92,7 @@ Die Reihenfolge der Abschnitte ist deshalb keine Geschmacksfrage:
 | Abschnitt | Aufgabe |
 |---|---|
 | Einstieg | in zehn Sekunden klarmachen: Was gibt es hier, für wen, was tun |
-| Problem | die Lage der Besucherin beschreiben, bis sie sich wiedererkennt |
+| Problem | die Lage des Besuchers beschreiben, bis er sich wiedererkennt |
 | Die Beraterinnen | wer hier hilft und warum man ihnen vertrauen kann |
 | Der Ablauf | was konkret passiert, wenn man einen Termin bucht |
 | Sortiment und Fragen | die letzten Einwände ausräumen |
