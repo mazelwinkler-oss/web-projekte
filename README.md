@@ -1,20 +1,54 @@
-# Web-Projekte — Fallstudien
+# Web-Projekte
 
-Websites, die ich gebaut, live geschaltet und übergeben habe.
-Gebaut wird mit **Claude Code im Terminal**, nicht mit Website-Baukästen.
+Websites, die ich gebaut, live geschaltet und übergeben habe — mit Claude Code im
+Terminal, nicht mit Baukästen.
 
-Hier stehen Vorgehen, Messwerte und was schiefging.
-**Kein Kundencode in diesem Repo** — die Projekte liegen privat, weil sie
-Kundeneigentum sind.
+Hier stehen Vorgehen, gemessene Ergebnisse und was schiefgegangen ist.
+**Kein Kundencode in diesem Repo**, die Projekte liegen privat.
+
+**[Live-Projekt ansehen → komfortzonehannover.de](https://www.komfortzonehannover.de)**
 
 ---
 
-## Projekt 1 — Komfortzone Hannover
+## Inhalt
 
-**Live:** https://www.komfortzonehannover.de
-**Auftraggeber:** Trageladen in Hannover-Nordstadt
-**Zeitraum:** Mai bis September 2026
-**Rolle:** Alleinige Umsetzung — Konzept, Bau, Domain-Umzug, Übergabe
+| | |
+|---|---|
+| [Auf einen Blick](#auf-einen-blick) | die Kennzahlen in einer Tabelle |
+| [Projekt: Komfortzone Hannover](#projekt-komfortzone-hannover) | Ausgangslage, Entscheidung, Umsetzung |
+| [Der Fehler, den ich gefunden habe](#der-fehler-den-ich-gefunden-habe) | 2.239 Dateien, die niemand sehen sollte |
+| [Projekt: Arbeitgeber](#projekt-landingpage-und-exposés-für-meinen-arbeitgeber) | wie ich dazu gekommen bin |
+| [Wie ich arbeite](#wie-ich-arbeite) | Wissensablage, Skills, Nachfragen |
+| [Werkzeuge und Können](#werkzeuge-und-können) | womit, und was ich gemacht habe |
+| [Was ich noch nicht gemacht habe](#was-ich-noch-nicht-gemacht-habe) | die offenen Lücken |
+| [Selbstgebaute Werkzeuge](#selbstgebaute-werkzeuge) | DiktierMaus und andere |
+| [Hintergrund](#hintergrund) | Werdegang in drei Sätzen |
+
+---
+
+## Auf einen Blick
+
+| | Vorher | Nachher |
+|---|---|---|
+| Website | Notlösung ohne Gestaltung | gestaltete Seite mit Story-Aufbau |
+| Ladezeit | nicht gemessen | **0,20 s** (Google wertet unter 0,8 s als gut) |
+| Übertragene Daten | — | 15,8 KB von 61,5 KB, komprimiert |
+| Laufende Kosten | 16–25 € / Monat Abo | **0 € Hosting**, nur Domain (~15 €/Jahr) |
+| Strukturierte Daten | keine | `LocalBusiness` vollständig |
+| Eindeutige Adresse für Google | nicht gesetzt | Canonical-Tag gesetzt |
+| Fehlerseite | Standard des Anbieters | eigene, im Seitendesign |
+| Ausfallzeit beim Domain-Umzug | — | **keine** |
+
+---
+
+## Projekt: Komfortzone Hannover
+
+| | |
+|---|---|
+| **Live** | https://www.komfortzonehannover.de |
+| **Auftraggeber** | Trageladen in Hannover-Nordstadt |
+| **Zeitraum** | Mai bis September 2026 |
+| **Rolle** | Alleinige Umsetzung: Konzept, Bau, Domain-Umzug, Übergabe |
 
 ### Ausgangslage
 
@@ -34,23 +68,26 @@ Squarespace?
 
 Antwort: gar nicht direkt. Squarespace nimmt kein fertiges HTML und CSS entgegen.
 Ich hätte das Layout im Baukasten nachbauen müssen — mit dem Ergebnis, dass es
-nicht so aussieht wie entworfen, und mit dem Abo als laufender Kostenposten.
+nicht so aussieht wie entworfen, und mit dem Abo als laufendem Kostenposten.
 
-Ich habe die Alternativen recherchiert und intern mit den Inhaberinnen
-durchgesprochen. Ausschlaggebend waren drei Punkte:
+Ich habe die Alternativen recherchiert und mit den Inhaberinnen durchgesprochen.
+Ausschlaggebend waren drei Punkte:
 
 1. Das Design sollte genau so umgesetzt werden, wie es entworfen wurde
 2. Ein Online-Shop soll später dazukommen — die Lösung musste dafür offen sein
 3. Die laufenden Kosten sollten runter
 
-Ergebnis: statische Seite auf Cloudflare Pages statt Baukasten. Das war keine
+**Ergebnis:** statische Seite auf Cloudflare Pages statt Baukasten. Keine
 technische Vorliebe, sondern das Resultat dieser Abwägung.
+
+### Aufbau der Seite
+
+Eine durchgehende Seite, die den Besucher durch eine Abfolge führt: Einstieg,
+Problem, Beratungsangebot, Ablauf, Sortiment, häufige Fragen, Kontakt. Dazu drei
+eigenständige Seiten für Shop, Impressum und Datenschutz.
 
 ### Umsetzung
 
-- Website neu gebaut: Startseite mit Story-Aufbau, Shop-Seite, Fehlerseite,
-  sowie die Seiten für Impressum und Datenschutz. Die Texte dafür wurden vom
-  Auftraggeber über einen Rechtstext-Generator gestellt, ich habe sie eingebunden.
 - **Reines HTML und CSS** — kein Baukasten, kein Framework, keine Abhängigkeiten
 - Schriften lokal eingebunden statt von Google geladen
   (LG München I, 20.01.2022, Az. 3 O 17493/20)
@@ -59,30 +96,19 @@ technische Vorliebe, sondern das Resultat dieser Abwägung.
 - `LocalBusiness`-Markup mit Adresse, Koordinaten, Öffnungszeiten, Bewertungen,
   Leistungen und Buchungs-Aktion
 - Canonical-Tag gesetzt, damit die Seite unter einer eindeutigen Adresse zählt
-- Eigene Fehlerseite statt Standard-Meldung des Hosters
-
-### Ergebnis, gemessen
-
-| | Vorher (Squarespace-Notlösung) | Nachher |
-|---|---|---|
-| Website | Informationsseite ohne Gestaltung | gestaltete Seite mit Story-Aufbau |
-| Ladezeit | nicht gemessen | **0,20 s** |
-| Übertragene Datenmenge | — | 15,8 KB (von 61,5 KB, komprimiert) |
-| Laufende Kosten | 16–25 € / Monat Abo | **0 € / Monat Hosting**, nur Domain (~15 €/Jahr) |
-| Strukturierte Daten | keine | `LocalBusiness` vollständig |
-| Ausfallzeit beim Umzug | — | **keine** |
-| Eindeutige Adresse für Google | nicht gesetzt | **Canonical-Tag gesetzt** |
-| Fehlerseite | Standard | eigene, im Seitendesign |
-
-Zur Einordnung: Google stuft alles unter 0,8 s als gut ein.
+- Eigene Fehlerseite statt Standard-Meldung des Anbieters
+- Seiten für Impressum und Datenschutz eingebunden. Die Texte dafür wurden vom
+  Auftraggeber über einen Rechtstext-Generator gestellt.
 
 **Aktueller Stand:** Die Seite ist live und in Benutzung. Drei Bildplätze warten
 noch auf Fotos, die erst gemacht werden müssen. Der Online-Shop ist in
 Vorbereitung.
 
-### Was schiefging — und wie ich es gefunden habe
+---
 
-**Der Fehler:** Nach dem ersten Deployment lagen **2.239 Dateien** öffentlich auf
+## Der Fehler, den ich gefunden habe
+
+**Was los war:** Nach dem ersten Deployment lagen **2.239 Dateien** öffentlich auf
 dem Server, darunter der komplette `node_modules`-Ordner.
 
 **Die Ursache:** Sobald eine `package.json` im Repository liegt, behandelt der
@@ -99,44 +125,20 @@ ist. Die Antwort war eine Zahl, die nicht zu einer Seite aus vier Dateien passte
 **Warum das hier steht:** Genau das ist für mich der Kern der Arbeit mit KI. Das
 Ergebnis sah fertig aus, die Seite lief, nichts schlug fehl. Wer an dieser Stelle
 nicht nachfragt, liefert einen Server aus, auf dem 2.239 fremde Dateien liegen.
-Ich übernehme Ergebnisse nicht, ich frage nach, was passiert ist.
 
-### Drei weitere Punkte aus dem Projekt
+### Zwei weitere Punkte aus dem Projekt
 
 - **Cloudflare Pages statt Workers.** Die aktuelle Oberfläche führt Projekte
   standardmäßig über Workers, das braucht eine eigene Zone. Pages kommt mit zwei
   DNS-Einträgen aus und war hier der richtige Weg.
-- **Beim Umzug ändern sich die technischen Rahmenbedingungen.** Hosting-Anbieter,
-  Schriftarten und eingebundene Dienste sind nach einem Plattformwechsel andere
-  als vorher. Wo die alten Angaben auf der Seite nicht mehr zum neuen Aufbau
-  passten, habe ich das an die Auftraggeberinnen gemeldet, damit sie die Texte
-  aktualisieren lassen konnten.
-- **Bei der Wettbewerbsanalyse prüfen, welche URL genau rankt.** Hier war es nicht
-  die Hauptdomain des Wettbewerbers, sondern eine Subdomain — die bereits den
-  Laden des Auftraggebers beschrieb. Ohne diese Prüfung wäre die ganze Analyse
-  falsch gewesen.
-
-### Wie ich mit KI arbeite
-
-Gebaut mit **Claude Code im Terminal** — nicht mit Prompt-zu-Website-Diensten und
-nicht mit Baukästen.
-
-Der Ablauf: Ich lege Struktur, Inhalte und technische Entscheidungen fest und
-lasse die Umsetzung schreiben. Danach frage ich nach, was tatsächlich passiert
-ist — nicht nur, ob das Ergebnis im Browser stimmt.
-
-Das ist die Stelle, an der Projekte auseinandergehen. Ein generiertes Ergebnis
-sieht meistens fertig aus. Ob es das ist, zeigt sich erst, wenn man nachhakt:
-Was liegt auf dem Server? Welche Werte stehen im Markup? Wird von außen etwas
-nachgeladen? Die drei Punkte oben — die 2.239 Dateien, die Markup-Angaben und
-die falsch identifizierte Wettbewerber-URL — sind alle so aufgefallen.
-
-Nicht delegierbar waren: der Domain-Umzug ohne Ausfallzeit, die Entscheidung für
-Pages statt Workers, und das Finden des `node_modules`-Fehlers.
+- **Bei der Wettbewerbsanalyse prüfen, welche Adresse genau in der Suche steht.**
+  Hier war es nicht die Hauptdomain des Wettbewerbers, sondern eine Subdomain —
+  die bereits den Laden des Auftraggebers beschrieb. Ohne diese Prüfung wäre die
+  ganze Analyse falsch gewesen.
 
 ---
 
-## Projekt 2 — Landingpage und Exposés für meinen Arbeitgeber
+## Projekt: Landingpage und Exposés für meinen Arbeitgeber
 
 Eingestellt bin ich im technischen Kundensupport eines E-Commerce-Unternehmens.
 Als dort ankam, dass ich mich intensiv mit KI-gestützter Entwicklung beschäftige,
@@ -151,20 +153,20 @@ nebenbei entstanden ist, ist die, die ich hauptberuflich machen möchte.
 
 ## Wie ich arbeite
 
-Beide Projekte oben sind nicht dadurch entstanden, dass ich einer KI gesagt habe,
-was ich will, und das Ergebnis übernommen habe. Dahinter steht ein Ablauf, den
-ich mir über zwei Jahre aufgebaut habe.
+Beide Projekte sind nicht dadurch entstanden, dass ich einer KI gesagt habe, was
+ich will, und das Ergebnis übernommen habe. Dahinter steht ein Ablauf, den ich
+mir über zwei Jahre aufgebaut habe.
 
 ### 1. Wissen sammeln, bevor gebaut wird
 
 Bei jedem neuen Thema recherchiere ich zuerst — Fachvideos, Dokumentation,
-Praxisberichte. Was dabei brauchbar ist, landet nicht in einem Lesezeichen,
-sondern in einer eigenen Wissensablage auf meinem Rechner: rund 20 Themenbereiche
-als durchsuchbare Textdateien, aufgebaut mit Obsidian.
+Praxisberichte. Was brauchbar ist, landet nicht in einem Lesezeichen, sondern in
+einer eigenen Wissensablage: rund 20 Themenbereiche als durchsuchbare
+Textdateien, aufgebaut mit Obsidian.
 
 Der entscheidende Teil: **Claude Code hat direkten Zugriff auf diese Ablage.**
-Damit arbeite ich nicht mit einer KI, die bei null anfängt, sondern mit einer, die
-meine Notizen, Projektstände und festgelegten Regeln kennt.
+Damit arbeite ich nicht mit einer KI, die bei null anfängt, sondern mit einer,
+die meine Notizen, Projektstände und festgelegten Regeln kennt.
 
 ### 2. Bauen und dabei hinterfragen
 
@@ -172,42 +174,42 @@ Während der Umsetzung frage ich gezielt nach: Ist das so gelöst, wie es üblic
 ist? Was passiert hier technisch? Was liegt danach tatsächlich auf dem Server?
 
 Diese Fragen kosten Zeit und finden Fehler, die im fertigen Ergebnis nicht zu
-sehen sind. Der `node_modules`-Fall weiter oben ist genau so aufgefallen.
+sehen sind — siehe oben.
 
 ### 3. Aus dem Ergebnis eine wiederverwendbare Anleitung machen
 
-Wenn etwas funktioniert, schreibe ich den Weg als **Skill** fest — eine
-strukturierte Anleitung, die Claude Code beim nächsten Mal selbst befolgt.
-Aus dem Komfortzone-Projekt ist so ein Ablaufplan für statische Websites
-entstanden: Aufbau, Deployment, Domain-Umzug, strukturierte Daten, Prüfschritte.
+Wenn etwas funktioniert, schreibe ich den Weg als **Skill** fest: eine
+strukturierte Anleitung, die Claude Code beim nächsten Mal selbst befolgt. Aus
+dem Komfortzone-Projekt ist so ein Ablaufplan für statische Websites entstanden —
+Aufbau, Deployment, Domain-Umzug, strukturierte Daten, Prüfschritte.
 
-Der Effekt: Das zweite Projekt dieser Art beginnt nicht wieder bei null. Und wenn
-sich etwas ändert, wird der Skill überarbeitet statt die Arbeit wiederholt.
+Der Effekt: Das zweite Projekt dieser Art beginnt nicht wieder bei null. Ändert
+sich etwas, wird der Skill überarbeitet statt die Arbeit wiederholt.
 
 ### 4. Werkzeuge bauen, wo Handarbeit anfällt
 
 Was sich nicht als Anleitung lösen lässt, wird ein kleines Programm — siehe
-unten.
+[Selbstgebaute Werkzeuge](#selbstgebaute-werkzeuge).
 
-**Warum das hier steht:** Die Frage bei KI-gestützter Arbeit ist nicht, ob jemand
-ein bestimmtes Werkzeug schon kennt. Sie ist, wie schnell und wie gründlich sich
-jemand ein neues erschließt. Dieser Ablauf ist meine Antwort darauf, und er
-funktioniert unabhängig vom Thema.
+> **Warum das hier steht:** Die Frage bei KI-gestützter Arbeit ist nicht, ob
+> jemand ein bestimmtes Werkzeug schon kennt. Sie ist, wie schnell und wie
+> gründlich sich jemand ein neues erschließt. Dieser Ablauf ist meine Antwort
+> darauf, und er funktioniert unabhängig vom Thema.
 
 ---
 
-## Womit ich arbeite
+## Werkzeuge und Können
 
-| Bereich | Werkzeuge |
+| Bereich | Womit |
 |---|---|
 | KI-gestützte Entwicklung | Claude Code (Terminal), eigene Skills, Claude, ChatGPT |
 | Website | HTML, CSS, Git, GitHub |
-| Hosting und Domains | Cloudflare Pages, DNS, Weiterleitungen |
+| Hosting und Domains | Cloudflare Pages, DNS |
 | Auffindbarkeit | `LocalBusiness`-Markup, Seitenstruktur, Canonical |
 | Server | Linux, Incus-Container, Nextcloud, WordPress-Migration |
 | Wissensablage | Obsidian, mit direktem Zugriff durch Claude Code |
 
-## Was ich gemacht habe
+**Was ich damit gemacht habe:**
 
 - Website von Grund auf gebaut und live geschaltet, mit automatischem Deployment
 - Domain umgezogen, ohne dass die Seite offline ging
@@ -220,6 +222,8 @@ funktioniert unabhängig vom Thema.
   weiterarbeiten können
 - Containerbasierte Serverumgebungen aufgesetzt und WordPress-Seiten migriert
 
+---
+
 ## Was ich noch nicht gemacht habe
 
 - Ad Creatives für Google und Meta
@@ -228,10 +232,10 @@ funktioniert unabhängig vom Thema.
 
 ---
 
-## Werkzeuge, die ich mir selbst gebaut habe
+## Selbstgebaute Werkzeuge
 
 Wenn mich in der täglichen Arbeit etwas ausbremst, baue ich mir ein Werkzeug
-dafür. Zwei Beispiele:
+dafür.
 
 **DiktierMaus** — ein Diktierprogramm für den eigenen Rechner. Ich arbeite viel
 im Terminal und wollte Anweisungen nicht mehr tippen. Taste gedrückt halten,
@@ -239,14 +243,14 @@ sprechen, loslassen — der Text steht im Eingabefeld. Die Spracherkennung läuf
 lokal, es geht nichts an einen fremden Dienst. Zusätzlich legt das Programm die
 letzten Texte ab, sodass nichts verloren geht, wenn ein Fenster abstürzt.
 
-**Umbenennen von Rechnungen** — ein Werkzeug, das eingehende Rechnungen liest und
-nach ihrem Inhalt benennt, statt dass ich jede einzeln öffne und umbenenne.
+**Umbenennen von Rechnungen** — liest eingehende Rechnungen und benennt sie nach
+ihrem Inhalt, statt dass ich jede einzeln öffne.
 
 Beide sind aus einem eigenen Ärgernis entstanden, nicht aus einer Übung.
 
 ---
 
-## Zum Hintergrund
+## Hintergrund
 
 Staatlich geprüfter Fahrzeugtechniker, davor Kfz-Meister. Zwei Jahre
 Bordnetzentwicklung bei BMW und VW, danach Konstruktion mit CATIA V5. Heute im
@@ -255,11 +259,6 @@ E-Commerce tätig.
 Den Umgang mit KI-gestützter Entwicklung habe ich mir selbst angeeignet — über
 Fachvideos, Dokumentation und gebaute Projekte, die ich mitschreibe.
 
----
-
-## Weitere Repos
-
-| Repo | Inhalt |
-|---|---|
-| [`lms-to-wordpress-migration`](https://github.com/mazelwinkler-oss/lms-to-wordpress-migration) | Browser-Tool zur Migration von LMS-Kursen nach WordPress, erzeugt valides WXR-XML |
-| [`wg-migration-tool`](https://github.com/mazelwinkler-oss/wg-migration-tool) | Migrations-Tool MemberPress zu WordPress Custom Platform |
+**Weitere Repos:**
+[`lms-to-wordpress-migration`](https://github.com/mazelwinkler-oss/lms-to-wordpress-migration) ·
+[`wg-migration-tool`](https://github.com/mazelwinkler-oss/wg-migration-tool)
