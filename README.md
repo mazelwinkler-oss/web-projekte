@@ -48,7 +48,7 @@ Hier stehen Vorgehen, gemessene Ergebnisse und was schiefgegangen ist.
 | **Live** | https://www.komfortzonehannover.de |
 | **Auftraggeber** | Trageladen in Hannover-Nordstadt |
 | **Zeitraum** | Mai bis September 2026 |
-| **Rolle** | Alleinige Umsetzung: Konzept, Bau, Domain-Umzug, Übergabe |
+| **Rolle** | Alleinige Umsetzung: Konzept, Texte, Bau, Domain-Umzug, Übergabe |
 
 ### Ausgangslage
 
@@ -105,6 +105,30 @@ Kopfbereich und keine Unterseiten für Inhalte, die zusammengehören.
 
 Eigenständige Seiten gibt es nur dort, wo sie hingehören: Shop, Impressum,
 Datenschutz.
+
+### Wie die Texte entstanden sind
+
+Die Texte stammen nicht von den Inhaberinnen und auch nicht aus einem
+Textgenerator. Sie sind in vier Schritten entstanden:
+
+1. **Gespräche.** Was macht den Laden aus, was sollen Besucher verstehen, was
+   wird im Beratungsalltag immer wieder gefragt. Das war die Rohmasse.
+2. **Recherche.** Wie beschreiben andere Anbieter ihre Beratung, welche Fragen
+   tauchen in Bewertungen und Foren auf, was sagen Fachquellen zum Thema Tragen.
+3. **Struktur nach der Methode.** Jeder Abschnitt bekam die Aufgabe, die ihm im
+   Aufbau oben zugewiesen ist — der Problem-Abschnitt beschreibt, der
+   Plan-Abschnitt ordnet, der Abschluss führt zur Buchung.
+4. **Schreiben mit KI, dann abstimmen.** Die Entwürfe entstanden mit Claude auf
+   Basis von Schritt 1 bis 3. Danach ging jeder Abschnitt zurück an die
+   Inhaberinnen, wurde korrigiert und angepasst, bis die Formulierungen zum Laden
+   passten.
+
+Der Satz auf der Startseite — „Eine Babytrage kauft man nicht. Man passt sie an."
+— stammt aus Schritt 1. Er fiel im Gespräch, nicht im Entwurf.
+
+**Warum das so lief:** Eine KI kann formulieren, aber sie weiß nicht, was in
+einem Beratungsgespräch tatsächlich gefragt wird. Dieses Wissen musste erst
+eingesammelt werden. Der Schreibschritt war der kürzeste von den vieren.
 
 ### Umsetzung
 
