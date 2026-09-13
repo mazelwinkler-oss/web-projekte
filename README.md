@@ -14,14 +14,13 @@ Kundeneigentum sind.
 **Live:** https://www.komfortzonehannover.de
 **Auftraggeber:** Trageladen in Hannover-Nordstadt
 **Zeitraum:** Mai bis September 2026
-**Rolle:** Alleinige Umsetzung — Konzept, Bau, Domain-Umzug, Rechtstexte, Übergabe
+**Rolle:** Alleinige Umsetzung — Konzept, Bau, Domain-Umzug, Übergabe
 
 ### Ausgangslage
 
 Es gab noch keine gestaltete Website. Auf Squarespace lag eine Notlösung: die
 nötigsten Informationen, damit Kundinnen überhaupt Termine buchen konnten. Kein
-Aufbau, kein Konzept, keine strukturierten Daten für die lokale Suche. Die
-Rechtstexte beschrieben teilweise Dinge, die es auf der Seite gar nicht gab.
+Aufbau, kein Konzept, keine strukturierten Daten für die lokale Suche.
 
 Erschwerend: Der Laden wurde von einem Vorgängerbetrieb übernommen. Die
 Sichtbarkeit bei Google hing noch an dessen Domain.
@@ -50,7 +49,8 @@ technische Vorliebe, sondern das Resultat dieser Abwägung.
 ### Umsetzung
 
 - Website neu gebaut: Startseite mit Story-Aufbau, Shop-Seite, Fehlerseite,
-  Impressum, Datenschutzerklärung
+  sowie die Seiten für Impressum und Datenschutz. Die Texte dafür wurden vom
+  Auftraggeber über einen Rechtstext-Generator gestellt, ich habe sie eingebunden.
 - **Reines HTML und CSS** — kein Baukasten, kein Framework, keine Abhängigkeiten
 - Schriften lokal eingebunden statt von Google geladen
   (LG München I, 20.01.2022, Az. 3 O 17493/20)
@@ -99,9 +99,11 @@ habe ich es beim Durchsehen der Deployment-Ausgabe.
 - **Cloudflare Pages statt Workers.** Die aktuelle Oberfläche führt Projekte
   standardmäßig über Workers, das braucht eine eigene Zone. Pages kommt mit zwei
   DNS-Einträgen aus und war hier der richtige Weg.
-- **Rechtstexte einer alten Seite nie ungeprüft übernehmen.** Hosting-Anbieter,
-  Schriftarten und eingebundene Dienste ändern sich beim Umzug fast immer. Im
-  alten Impressum stand zusätzlich eine falsche Postleitzahl.
+- **Beim Umzug ändern sich die technischen Rahmenbedingungen.** Hosting-Anbieter,
+  Schriftarten und eingebundene Dienste sind nach einem Plattformwechsel andere
+  als vorher. Wo die alten Angaben auf der Seite nicht mehr zum neuen Aufbau
+  passten, habe ich das an die Auftraggeberinnen gemeldet, damit sie die Texte
+  aktualisieren lassen konnten.
 - **Bei der Wettbewerbsanalyse prüfen, welche URL genau rankt.** Hier war es nicht
   die Hauptdomain des Wettbewerbers, sondern eine Subdomain — die bereits den
   Laden des Auftraggebers beschrieb. Ohne diese Prüfung wäre die ganze Analyse
@@ -113,43 +115,12 @@ Gebaut mit **Claude Code im Terminal** — nicht mit Prompt-zu-Website-Diensten 
 nicht mit Baukästen.
 
 Der Ablauf: Ich lege Struktur, Inhalte und technische Entscheidungen fest, lasse
-die Umsetzung schreiben, prüfe und korrigiere. Bei Rechtstexten und Markup habe
-ich jede Angabe gegen die tatsächliche Seite geprüft, weil generierte Texte dort
-regelmäßig Dinge behaupten, die nicht zutreffen.
+die Umsetzung schreiben, prüfe und korrigiere. Beim Markup habe ich jede Angabe
+gegen die tatsächliche Seite geprüft, weil generierte Strukturdaten regelmäßig
+Werte enthalten, die nicht zum Betrieb passen.
 
 Nicht delegierbar waren: der Domain-Umzug ohne Ausfallzeit, die Entscheidung für
 Pages statt Workers, und das Finden des `node_modules`-Fehlers.
-
----
-
-## Womit ich arbeite
-
-| Bereich | Werkzeuge |
-|---|---|
-| KI-gestützte Entwicklung | Claude Code (Terminal), Claude, ChatGPT |
-| Website | HTML, CSS, Git, GitHub |
-| Hosting und Domains | Cloudflare Pages, DNS, Weiterleitungen |
-| Auffindbarkeit | `LocalBusiness`-Markup, Seitenstruktur, Canonical |
-| Server | Linux, Incus-Container, Nextcloud, WordPress-Migration |
-
-## Was ich gemacht habe
-
-- Website von Grund auf gebaut und live geschaltet, mit automatischem Deployment
-- Domain umgezogen, ohne dass die Seite offline ging
-- `LocalBusiness`-Markup und Weiterleitungen für Adressen aus dem Suchindex gesetzt
-- Rechtstexte geprüft und angepasst, Schriften lokal eingebunden
-- Ladezeit und Übertragungsmenge gemessen und gesenkt
-- Dokumentation und Anleitung übergeben, sodass die Auftraggeberinnen selbst
-  weiterarbeiten können
-- Containerbasierte Serverumgebungen aufgesetzt und WordPress-Seiten migriert
-
-## Was ich noch nicht gemacht habe
-
-- Ad Creatives für Google und Meta
-- Tracking-Pixel und Kampagnen-Auswertung
-- Mehrere Kundenprojekte parallel
-
----
 
 ---
 
@@ -171,6 +142,36 @@ nebenbei entstanden ist, ist die, die ich hauptberuflich machen möchte.
 **alissa-stein.com** — Website einer Moderatorin, live.
 Kein alleiniges Projekt von mir. Ich habe an der Umsetzung mitgewirkt, den
 Hauptteil haben andere gemacht.
+
+---
+
+## Womit ich arbeite
+
+| Bereich | Werkzeuge |
+|---|---|
+| KI-gestützte Entwicklung | Claude Code (Terminal), Claude, ChatGPT |
+| Website | HTML, CSS, Git, GitHub |
+| Hosting und Domains | Cloudflare Pages, DNS, Weiterleitungen |
+| Auffindbarkeit | `LocalBusiness`-Markup, Seitenstruktur, Canonical |
+| Server | Linux, Incus-Container, Nextcloud, WordPress-Migration |
+
+## Was ich gemacht habe
+
+- Website von Grund auf gebaut und live geschaltet, mit automatischem Deployment
+- Domain umgezogen, ohne dass die Seite offline ging
+- `LocalBusiness`-Markup und Weiterleitungen für Adressen aus dem Suchindex gesetzt
+- Schriften lokal eingebunden, sodass beim Seitenaufruf keine externen Server
+  kontaktiert werden
+- Ladezeit und Übertragungsmenge gemessen und gesenkt
+- Dokumentation und Anleitung übergeben, sodass die Auftraggeberinnen selbst
+  weiterarbeiten können
+- Containerbasierte Serverumgebungen aufgesetzt und WordPress-Seiten migriert
+
+## Was ich noch nicht gemacht habe
+
+- Ad Creatives für Google und Meta
+- Tracking-Pixel und Kampagnen-Auswertung
+- Mehrere Kundenprojekte parallel
 
 ---
 
