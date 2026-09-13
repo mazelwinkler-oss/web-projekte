@@ -90,9 +90,14 @@ Das passiert still — die Seite funktioniert, nichts schlägt fehl.
 **Die Behebung:** `.assetsignore` anlegen und ausschließen, was nicht ausgeliefert
 werden soll. Danach: 4 Dateien statt 2.239.
 
-**Warum das hier steht:** Weil generierter Code solche Fehler nicht meldet. Wer
-nur das Ergebnis im Browser prüft, sieht eine funktionierende Website. Gefunden
-habe ich es beim Durchsehen der Deployment-Ausgabe.
+**Wie es aufgefallen ist:** Nicht im Browser — dort sah alles richtig aus. Ich
+hatte nach dem Deployment nachgefragt, was tatsächlich auf dem Server gelandet
+ist. Die Antwort war eine Zahl, die nicht zu einer Seite aus vier Dateien passte.
+
+**Warum das hier steht:** Genau das ist für mich der Kern der Arbeit mit KI. Das
+Ergebnis sah fertig aus, die Seite lief, nichts schlug fehl. Wer an dieser Stelle
+nicht nachfragt, liefert einen Server aus, auf dem 2.239 fremde Dateien liegen.
+Ich übernehme Ergebnisse nicht, ich frage nach, was passiert ist.
 
 ### Drei weitere Punkte aus dem Projekt
 
@@ -114,10 +119,15 @@ habe ich es beim Durchsehen der Deployment-Ausgabe.
 Gebaut mit **Claude Code im Terminal** — nicht mit Prompt-zu-Website-Diensten und
 nicht mit Baukästen.
 
-Der Ablauf: Ich lege Struktur, Inhalte und technische Entscheidungen fest, lasse
-die Umsetzung schreiben, prüfe und korrigiere. Beim Markup habe ich jede Angabe
-gegen die tatsächliche Seite geprüft, weil generierte Strukturdaten regelmäßig
-Werte enthalten, die nicht zum Betrieb passen.
+Der Ablauf: Ich lege Struktur, Inhalte und technische Entscheidungen fest und
+lasse die Umsetzung schreiben. Danach frage ich nach, was tatsächlich passiert
+ist — nicht nur, ob das Ergebnis im Browser stimmt.
+
+Das ist die Stelle, an der Projekte auseinandergehen. Ein generiertes Ergebnis
+sieht meistens fertig aus. Ob es das ist, zeigt sich erst, wenn man nachhakt:
+Was liegt auf dem Server? Welche Werte stehen im Markup? Wird von außen etwas
+nachgeladen? Die drei Punkte oben — die 2.239 Dateien, die Markup-Angaben und
+die falsch identifizierte Wettbewerber-URL — sind alle so aufgefallen.
 
 Nicht delegierbar waren: der Domain-Umzug ohne Ausfallzeit, die Entscheidung für
 Pages statt Workers, und das Finden des `node_modules`-Fehlers.
