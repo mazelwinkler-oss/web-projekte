@@ -124,6 +124,26 @@ Pages statt Workers, und das Finden des `node_modules`-Fehlers.
 
 ---
 
+---
+
+## Werkzeuge, die ich mir selbst gebaut habe
+
+Wenn mich in der täglichen Arbeit etwas ausbremst, baue ich mir ein Werkzeug
+dafür. Zwei Beispiele:
+
+**DiktierMaus** — ein Diktierprogramm für den eigenen Rechner. Ich arbeite viel
+im Terminal und wollte Anweisungen nicht mehr tippen. Taste gedrückt halten,
+sprechen, loslassen — der Text steht im Eingabefeld. Die Spracherkennung läuft
+lokal, es geht nichts an einen fremden Dienst. Zusätzlich legt das Programm die
+letzten Texte ab, sodass nichts verloren geht, wenn ein Fenster abstürzt.
+
+**Umbenennen von Rechnungen** — ein Werkzeug, das eingehende Rechnungen liest und
+nach ihrem Inhalt benennt, statt dass ich jede einzeln öffne und umbenenne.
+
+Beide sind aus einem eigenen Ärgernis entstanden, nicht aus einer Übung.
+
+---
+
 ## Zum Hintergrund
 
 Staatlich geprüfter Fahrzeugtechniker, davor Kfz-Meister. Zwei Jahre
