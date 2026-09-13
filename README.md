@@ -34,9 +34,9 @@ Hier stehen Vorgehen, gemessene Ergebnisse und was schiefgegangen ist.
 | Ladezeit | nicht gemessen | **0,20 s** (Google wertet unter 0,8 s als gut) |
 | Übertragene Daten | — | 15,8 KB von 61,5 KB, komprimiert |
 | Laufende Kosten | 16–25 € / Monat Abo | **0 € Hosting**, nur Domain (~15 €/Jahr) |
-| Strukturierte Daten | keine | `LocalBusiness` vollständig |
-| Eindeutige Adresse für Google | nicht gesetzt | Canonical-Tag gesetzt |
-| Fehlerseite | Standard des Anbieters | eigene, im Seitendesign |
+| Strukturierte Daten | keine | `LocalBusiness` vollständig (maschinenlesbarer Steckbrief des Ladens) |
+| Eindeutige Adresse für Google | nicht gesetzt | Canonical-Tag gesetzt (sagt Google, welche Adresse zählt) |
+| Fehlerseite | graue Standardmeldung | eigene, im Design des Ladens |
 | Ausfallzeit beim Domain-Umzug | — | **keine** |
 
 ---
@@ -80,11 +80,30 @@ Ausschlaggebend waren drei Punkte:
 **Ergebnis:** statische Seite auf Cloudflare Pages statt Baukasten. Keine
 technische Vorliebe, sondern das Resultat dieser Abwägung.
 
-### Aufbau der Seite
+### Aufbau der Seite: eine Seite, die einer Erzählung folgt
 
-Eine durchgehende Seite, die den Besucher durch eine Abfolge führt: Einstieg,
-Problem, Beratungsangebot, Ablauf, Sortiment, häufige Fragen, Kontakt. Dazu drei
-eigenständige Seiten für Shop, Impressum und Datenschutz.
+Die Startseite ist bewusst als durchgehende Seite gebaut, nicht als Menü mit
+Unterseiten. Der Aufbau folgt dem Muster der Heldenreise, wie es Alexander
+Christiani in „Webseiten StoryMagic" für Websites beschreibt — mit Donald Millers
+StoryBrand als Grundlage.
+
+Die Reihenfolge der Abschnitte ist deshalb keine Geschmacksfrage:
+
+| Abschnitt | Aufgabe |
+|---|---|
+| Einstieg | in zehn Sekunden klarmachen: Was gibt es hier, für wen, was tun |
+| Problem | die Lage der Besucherin beschreiben, bis sie sich wiedererkennt |
+| Die Beraterinnen | wer hier hilft und warum man ihnen vertrauen kann |
+| Der Ablauf | was konkret passiert, wenn man einen Termin bucht |
+| Sortiment und Fragen | die letzten Einwände ausräumen |
+| Kontakt | ein klarer nächster Schritt, kein Formularlabyrinth |
+
+Der Leitsatz dieser Methode: **Design verkauft nicht, Klarheit verkauft.** Wer
+erst scrollen und suchen muss, springt ab — deshalb keine Bildergalerien im
+Kopfbereich und keine Unterseiten für Inhalte, die zusammengehören.
+
+Eigenständige Seiten gibt es nur dort, wo sie hingehören: Shop, Impressum,
+Datenschutz.
 
 ### Umsetzung
 
@@ -93,10 +112,16 @@ eigenständige Seiten für Shop, Impressum und Datenschutz.
   (LG München I, 20.01.2022, Az. 3 O 17493/20)
 - Deployment über GitHub, automatisch bei jedem Push
 - Domain von Squarespace-DNS zu Cloudflare umgezogen, ohne Ausfallzeit
-- `LocalBusiness`-Markup mit Adresse, Koordinaten, Öffnungszeiten, Bewertungen,
-  Leistungen und Buchungs-Aktion
-- Canonical-Tag gesetzt, damit die Seite unter einer eindeutigen Adresse zählt
-- Eigene Fehlerseite statt Standard-Meldung des Anbieters
+- `LocalBusiness`-Markup: ein für Besucher unsichtbarer Steckbrief im Quelltext,
+  den Google maschinell ausliest — Adresse, Koordinaten, Öffnungszeiten,
+  Bewertungen, Leistungen und Terminbuchung. Dadurch kann Google Öffnungszeiten
+  und Sterne direkt im Suchergebnis anzeigen statt nur einen Link.
+- Canonical-Tag gesetzt: Die Seite ist mit und ohne „www“ erreichbar. Das Tag
+  sagt Google, welche der beiden Adressen die richtige ist — sonst bewertet die
+  Suchmaschine zweimal denselben Inhalt und teilt die Punkte auf.
+- Eigene Fehlerseite: Wer eine Adresse falsch eintippt, landet auf einer Seite im
+  Design des Ladens mit Weg zurück — nicht auf der grauen Standardmeldung des
+  Hosting-Anbieters.
 - Seiten für Impressum und Datenschutz eingebunden. Die Texte dafür wurden vom
   Auftraggeber über einen Rechtstext-Generator gestellt.
 
