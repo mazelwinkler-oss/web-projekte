@@ -1,6 +1,6 @@
 # Web-Projekte
 
-Websites, die ich gebaut, live geschaltet und übergeben habe — mit Claude Code im
+Websites, die ich gebaut, live geschaltet und übergeben habe, gebaut mit Claude Code im
 Terminal, nicht mit Baukästen.
 
 Hier stehen Vorgehen, gemessene Ergebnisse und was schiefgegangen ist.
@@ -67,14 +67,14 @@ Nachdem der Entwurf stand, kam die eigentliche Frage: Wie kommt dieses Design au
 Squarespace?
 
 Antwort: gar nicht direkt. Squarespace nimmt kein fertiges HTML und CSS entgegen.
-Ich hätte das Layout im Baukasten nachbauen müssen — mit dem Ergebnis, dass es
+Ich hätte das Layout im Baukasten nachbauen müssen, mit dem Ergebnis, dass es
 nicht so aussieht wie entworfen, und mit dem Abo als laufendem Kostenposten.
 
 Ich habe die Alternativen recherchiert und mit den Inhaberinnen durchgesprochen.
 Ausschlaggebend waren drei Punkte:
 
 1. Das Design sollte genau so umgesetzt werden, wie es entworfen wurde
-2. Ein Online-Shop soll später dazukommen — die Lösung musste dafür offen sein
+2. Ein Online-Shop soll später dazukommen, die Lösung musste dafür offen sein
 3. Die laufenden Kosten sollten runter
 
 **Ergebnis:** statische Seite auf Cloudflare Pages statt Baukasten. Keine
@@ -84,23 +84,23 @@ technische Vorliebe, sondern das Resultat dieser Abwägung.
 
 Die Startseite ist bewusst als durchgehende Seite gebaut, nicht als Menü mit
 Unterseiten. Der Aufbau folgt dem Muster der Heldenreise, wie es Alexander
-Christiani in „Webseiten StoryMagic" für Websites beschreibt — mit Donald Millers
+Christiani in „Webseiten StoryMagic" für Websites beschreibt, mit Donald Millers
 StoryBrand als Grundlage.
 
 Die Reihenfolge der Abschnitte ist deshalb keine Geschmacksfrage:
 
 | Element der Methode | Umsetzung auf der Seite |
 |---|---|
-| **Einstieg** — in zehn Sekunden klarmachen, worum es geht | „Eine Babytrage kauft man nicht. Man passt sie an." |
-| **Problem** — die Lage beschreiben, bis der Besucher sich wiedererkennt | Erst das Äußere (Baby quengelt, Rücken zwickt), dann das Innere (das Gefühl, etwas falsch zu machen) |
-| **Mentor** — wer hilft und warum man ihm vertrauen kann | Überschrift „Wer dich begleitet", nicht „Über uns". Der Kunde bleibt im Mittelpunkt |
-| **Plan** — Komplexität in drei Schritte auflösen | „In drei Schritten zur richtigen Trage": Termin buchen, Beratung vor Ort, passende Trage |
-| **Was sich ändert** — Gewinn und Verlust zeigen | „Eine Stunde Beratung. Oder Monate Unsicherheit." Beide Seiten, nicht nur die schöne |
+| **Einstieg**, in zehn Sekunden klarmachen, worum es geht | „Eine Babytrage kauft man nicht. Man passt sie an." |
+| **Problem**, die Lage beschreiben, bis der Besucher sich wiedererkennt | Erst das Äußere (Baby quengelt, Rücken zwickt), dann das Innere (das Gefühl, etwas falsch zu machen) |
+| **Mentor**, wer hilft und warum man ihm vertrauen kann | Überschrift „Wer dich begleitet", nicht „Über uns". Der Kunde bleibt im Mittelpunkt |
+| **Plan**, Komplexität in drei Schritte auflösen | „In drei Schritten zur richtigen Trage": Termin buchen, Beratung vor Ort, passende Trage |
+| **Was sich ändert**, Gewinn und Verlust zeigen | „Eine Stunde Beratung. Oder Monate Unsicherheit." Beide Seiten, nicht nur die schöne |
 | **Vertrauen und Einwände** | Echte Kundenstimmen und Bewertung, danach die häufigen Fragen vor der Buchung |
 | **Abschluss** | Greift den Einstiegssatz wieder auf und führt zum nächsten Schritt |
 
 Der Leitsatz dieser Methode: **Design verkauft nicht, Klarheit verkauft.** Wer
-erst scrollen und suchen muss, springt ab — deshalb keine Bildergalerien im
+erst scrollen und suchen muss, springt ab. Deshalb keine Bildergalerien im
 Kopfbereich und keine Unterseiten für Inhalte, die zusammengehören.
 
 Eigenständige Seiten gibt es nur dort, wo sie hingehören: Shop, Impressum,
@@ -116,15 +116,14 @@ Textgenerator. Sie sind in vier Schritten entstanden:
 2. **Recherche.** Wie beschreiben andere Anbieter ihre Beratung, welche Fragen
    tauchen in Bewertungen und Foren auf, was sagen Fachquellen zum Thema Tragen.
 3. **Struktur nach der Methode.** Jeder Abschnitt bekam die Aufgabe, die ihm im
-   Aufbau oben zugewiesen ist — der Problem-Abschnitt beschreibt, der
+   Aufbau oben zugewiesen ist, der Problem-Abschnitt beschreibt, der
    Plan-Abschnitt ordnet, der Abschluss führt zur Buchung.
 4. **Schreiben mit KI, dann abstimmen.** Die Entwürfe entstanden mit Claude auf
    Basis von Schritt 1 bis 3. Danach ging jeder Abschnitt zurück an die
    Inhaberinnen, wurde korrigiert und angepasst, bis die Formulierungen zum Laden
    passten.
 
-Der Satz auf der Startseite — „Eine Babytrage kauft man nicht. Man passt sie an."
-— stammt aus Schritt 1. Er fiel im Gespräch, nicht im Entwurf.
+Der Satz auf der Startseite: „Eine Babytrage kauft man nicht. Man passt sie an.": stammt aus Schritt 1. Er fiel im Gespräch, nicht im Entwurf.
 
 **Warum das so lief:** Eine KI kann formulieren, aber sie weiß nicht, was in
 einem Beratungsgespräch tatsächlich gefragt wird. Dieses Wissen musste erst
@@ -132,20 +131,20 @@ eingesammelt werden. Der Schreibschritt war der kürzeste von den vieren.
 
 ### Umsetzung
 
-- **Reines HTML und CSS** — kein Baukasten, kein Framework, keine Abhängigkeiten
+- **Reines HTML und CSS**, kein Baukasten, kein Framework, keine Abhängigkeiten
 - Schriften lokal eingebunden statt von Google geladen
   (LG München I, 20.01.2022, Az. 3 O 17493/20)
 - Deployment über GitHub, automatisch bei jedem Push
 - Domain von Squarespace-DNS zu Cloudflare umgezogen, ohne Ausfallzeit
 - `LocalBusiness`-Markup: ein für Besucher unsichtbarer Steckbrief im Quelltext,
-  den Google maschinell ausliest — Adresse, Koordinaten, Öffnungszeiten,
+  den Google maschinell ausliest: Adresse, Koordinaten, Öffnungszeiten,
   Bewertungen, Leistungen und Terminbuchung. Dadurch kann Google Öffnungszeiten
   und Sterne direkt im Suchergebnis anzeigen statt nur einen Link.
 - Canonical-Tag gesetzt: Die Seite ist mit und ohne „www“ erreichbar. Das Tag
-  sagt Google, welche der beiden Adressen die richtige ist — sonst bewertet die
+  sagt Google, welche der beiden Adressen die richtige ist. Sonst bewertet die
   Suchmaschine zweimal denselben Inhalt und teilt die Punkte auf.
 - Eigene Fehlerseite: Wer eine Adresse falsch eintippt, landet auf einer Seite im
-  Design des Ladens mit Weg zurück — nicht auf der grauen Standardmeldung des
+  Design des Ladens mit Weg zurück, nicht auf der grauen Standardmeldung des
   Hosting-Anbieters.
 - Seiten für Impressum und Datenschutz eingebunden. Die Texte dafür wurden vom
   Auftraggeber über einen Rechtstext-Generator gestellt.
@@ -163,12 +162,12 @@ dem Server, darunter der komplette `node_modules`-Ordner.
 
 **Die Ursache:** Sobald eine `package.json` im Repository liegt, behandelt der
 Build-Server das Projekt als Node-Anwendung und lädt den gesamten Baum mit hoch.
-Das passiert still — die Seite funktioniert, nichts schlägt fehl.
+Das passiert still, die Seite funktioniert, nichts schlägt fehl.
 
 **Die Behebung:** `.assetsignore` anlegen und ausschließen, was nicht ausgeliefert
 werden soll. Danach: 4 Dateien statt 2.239.
 
-**Wie es aufgefallen ist:** Nicht im Browser — dort sah alles richtig aus. Ich
+**Wie es aufgefallen ist:** Nicht im Browser, dort sah alles richtig aus. Ich
 hatte nach dem Deployment nachgefragt, was tatsächlich auf dem Server gelandet
 ist. Die Antwort war eine Zahl, die nicht zu einer Seite aus vier Dateien passte.
 
@@ -182,7 +181,7 @@ nicht nachfragt, liefert einen Server aus, auf dem 2.239 fremde Dateien liegen.
   standardmäßig über Workers, das braucht eine eigene Zone. Pages kommt mit zwei
   DNS-Einträgen aus und war hier der richtige Weg.
 - **Bei der Wettbewerbsanalyse prüfen, welche Adresse genau in der Suche steht.**
-  Hier war es nicht die Hauptdomain des Wettbewerbers, sondern eine Subdomain —
+  Hier war es nicht die Hauptdomain des Wettbewerbers, sondern eine Subdomain,
   die bereits den Laden des Auftraggebers beschrieb. Ohne diese Prüfung wäre die
   ganze Analyse falsch gewesen.
 
@@ -194,7 +193,7 @@ Eingestellt bin ich im technischen Kundensupport eines E-Commerce-Unternehmens.
 Als dort ankam, dass ich mich intensiv mit KI-gestützter Entwicklung beschäftige,
 kam die Anfrage, ob ich Produkt-Exposés und eine Landingpage übernehmen kann.
 
-Beides habe ich gebaut — neben der eigentlichen Stelle, nicht als Teil davon.
+Beides habe ich gebaut, neben der eigentlichen Stelle, nicht als Teil davon.
 
 Das ist der Grund, warum ich mich auf diese Anzeige bewerbe: Die Arbeit, die dort
 nebenbei entstanden ist, ist die, die ich hauptberuflich machen möchte.
@@ -209,7 +208,7 @@ mir über zwei Jahre aufgebaut habe.
 
 ### 1. Wissen sammeln, bevor gebaut wird
 
-Bei jedem neuen Thema recherchiere ich zuerst — Fachvideos, Dokumentation,
+Bei jedem neuen Thema recherchiere ich zuerst: Fachvideos, Dokumentation,
 Praxisberichte. Was brauchbar ist, landet nicht in einem Lesezeichen, sondern in
 einer eigenen Wissensablage: rund 20 Themenbereiche als durchsuchbare
 Textdateien, aufgebaut mit Obsidian.
@@ -224,13 +223,13 @@ Während der Umsetzung frage ich gezielt nach: Ist das so gelöst, wie es üblic
 ist? Was passiert hier technisch? Was liegt danach tatsächlich auf dem Server?
 
 Diese Fragen kosten Zeit und finden Fehler, die im fertigen Ergebnis nicht zu
-sehen sind — siehe oben.
+sehen sind, siehe oben.
 
 ### 3. Aus dem Ergebnis eine wiederverwendbare Anleitung machen
 
 Wenn etwas funktioniert, schreibe ich den Weg als **Skill** fest: eine
 strukturierte Anleitung, die Claude Code beim nächsten Mal selbst befolgt. Aus
-dem Komfortzone-Projekt ist so ein Ablaufplan für statische Websites entstanden —
+dem Komfortzone-Projekt ist so ein Ablaufplan für statische Websites entstanden:
 Aufbau, Deployment, Domain-Umzug, strukturierte Daten, Prüfschritte.
 
 Der Effekt: Das zweite Projekt dieser Art beginnt nicht wieder bei null. Ändert
@@ -238,7 +237,7 @@ sich etwas, wird der Skill überarbeitet statt die Arbeit wiederholt.
 
 ### 4. Werkzeuge bauen, wo Handarbeit anfällt
 
-Was sich nicht als Anleitung lösen lässt, wird ein kleines Programm — siehe
+Was sich nicht als Anleitung lösen lässt, wird ein kleines Programm, siehe
 [Selbstgebaute Werkzeuge](#selbstgebaute-werkzeuge).
 
 > **Warum das hier steht:** Die Frage bei KI-gestützter Arbeit ist nicht, ob
@@ -287,13 +286,13 @@ Was sich nicht als Anleitung lösen lässt, wird ein kleines Programm — siehe
 Wenn mich in der täglichen Arbeit etwas ausbremst, baue ich mir ein Werkzeug
 dafür.
 
-**DiktierMaus** — ein Diktierprogramm für den eigenen Rechner. Ich arbeite viel
+**DiktierMaus**, ein Diktierprogramm für den eigenen Rechner. Ich arbeite viel
 im Terminal und wollte Anweisungen nicht mehr tippen. Taste gedrückt halten,
-sprechen, loslassen — der Text steht im Eingabefeld. Die Spracherkennung läuft
+sprechen, loslassen, und der Text steht im Eingabefeld. Die Spracherkennung läuft
 lokal, es geht nichts an einen fremden Dienst. Zusätzlich legt das Programm die
 letzten Texte ab, sodass nichts verloren geht, wenn ein Fenster abstürzt.
 
-**Umbenennen von Rechnungen** — liest eingehende Rechnungen und benennt sie nach
+**Umbenennen von Rechnungen**, liest eingehende Rechnungen und benennt sie nach
 ihrem Inhalt, statt dass ich jede einzeln öffne.
 
 Beide sind aus einem eigenen Ärgernis entstanden, nicht aus einer Übung.
@@ -306,5 +305,5 @@ Staatlich geprüfter Fahrzeugtechniker, davor Kfz-Meister. Zwei Jahre
 Bordnetzentwicklung bei BMW und VW, danach Konstruktion mit CATIA V5. Heute im
 E-Commerce tätig.
 
-Den Umgang mit KI-gestützter Entwicklung habe ich mir selbst angeeignet — über
+Den Umgang mit KI-gestützter Entwicklung habe ich mir selbst angeeignet, über
 Fachvideos, Dokumentation und gebaute Projekte, die ich mitschreibe.
