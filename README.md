@@ -153,6 +153,27 @@ Pages statt Workers, und das Finden des `node_modules`-Fehlers.
 
 ---
 
+## Projekt 2 — Landingpage und Exposés für meinen Arbeitgeber
+
+Eingestellt bin ich im technischen Kundensupport eines E-Commerce-Unternehmens.
+Als dort ankam, dass ich mich intensiv mit KI-gestützter Entwicklung beschäftige,
+kam die Anfrage, ob ich Produkt-Exposés und eine Landingpage übernehmen kann.
+
+Beides habe ich gebaut — neben der eigentlichen Stelle, nicht als Teil davon.
+
+Das ist der Grund, warum ich mich auf diese Anzeige bewerbe: Die Arbeit, die dort
+nebenbei entstanden ist, ist die, die ich hauptberuflich machen möchte.
+
+---
+
+## Mitgewirkt
+
+**alissa-stein.com** — Website einer Moderatorin, live.
+Kein alleiniges Projekt von mir. Ich habe an der Umsetzung mitgewirkt, den
+Hauptteil haben andere gemacht.
+
+---
+
 ## Werkzeuge, die ich mir selbst gebaut habe
 
 Wenn mich in der täglichen Arbeit etwas ausbremst, baue ich mir ein Werkzeug
