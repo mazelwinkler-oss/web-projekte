@@ -187,6 +187,16 @@ nicht nachfragt, liefert einen Server aus, auf dem 2.239 fremde Dateien liegen.
 
 ---
 
+## Arbeitsproben zum Anschauen
+
+Zwei Scroll-Landingpages, die ich für meinen Arbeitgeber gebaut habe, liegen als Arbeitsprobe online:
+
+**https://mazelwinkler-oss.github.io/arbeitsproben/**
+
+Am besten am Rechner ansehen und langsam scrollen, die Seiten leben von den Übergängen.
+
+---
+
 ## Projekt: Landingpage und Exposés für meinen Arbeitgeber
 
 Eingestellt bin ich im technischen Kundensupport eines E-Commerce-Unternehmens.
